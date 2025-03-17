@@ -1,0 +1,16 @@
+#! /bin/sh
+
+case "$1" in
+	start)
+		echo "Assignment-8 Loading aesdchar module on startup..."
+		/usr/bin/aesdchar_load
+		;;
+	stop)
+		echo "Assignment-8 Unloading aesdchar module on shutdown..."
+		/usr/bin/aesdchar_unload
+		;;
+	*)
+		echo "Usage: $0 {start|stop}"
+		exit 1
+esac
+exit 0

@@ -27,7 +27,6 @@ LDD_MODULE_MAKE_OPTS = KVERSION=$(LINUX_VERSION_PROBED)
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
 define LDD_INSTALL_TARGET_CMDS
 	
-	# Added install commands for finder.sh, finder-test.sh and writer (executable)
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_load $(TARGET_DIR)/usr/bin
 	$(INSTALL) -m 0755 $(@D)/misc-modules/module_unload $(TARGET_DIR)/usr/bin
 	
