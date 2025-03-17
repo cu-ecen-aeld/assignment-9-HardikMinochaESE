@@ -1,9 +1,5 @@
 config BR2_PACKAGE_AESDCHAR
-<<<<<<< HEAD
-	bool "aesdchar package"
-=======
 	bool "aesdchar-package"
->>>>>>> 0e5fd08 (Fulltest passed)
 	help
 	  This package builds the aesdchar components
 	  from assignment 3 into the root filesystem.
