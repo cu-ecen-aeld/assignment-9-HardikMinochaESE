@@ -6,7 +6,7 @@
 ##############################################################
 
 #TODO: Fill up the contents below in order to reference your assignment 7 git contents
-AESDCHAR_VERSION = 9a77af6977cc53000a56b2c03d432d38f55a470f
+AESDCHAR_VERSION = d2d7d90003148aad181b3ee161d4ebc61c4fa9c9
 # Note: Be sure to reference the *ssh* repository URL here (not https) to work properly
 # with ssh keys and the automated build/test system.
 # Your site should start with git@github.com:
@@ -16,12 +16,6 @@ AESDCHAR_GIT_SUBMODULES = YES
 
 AESDCHAR_MODULE_SUBDIRS = aesd-char-driver
 AESDCHAR_MODULE_MAKE_OPTS = KVERSION=$(LINUX_VERSION_PROBED)
-
-##define LDD_BUILD_CMDS
-##	# Build commands for misc-modules and scull components from the assignment-7 repositories.
-##	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/misc-modules
-##	$(MAKE) $(TARGET_CONFIGURE_OPTS) -C $(@D)/scull all
-##endef
 
 # TODO add your writer, finder and finder-test utilities/scripts to the installation steps below
 define AESDCHAR_INSTALL_TARGET_CMDS
